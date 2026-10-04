@@ -1,0 +1,67 @@
+{
+  "name": "wallet-service-mono",
+  "version": "1.0.0",
+  "description": "Merchant crypto payment gateway backend (BTC, Omni USDT, Ethereum ERC20 USDT). Reference code.",
+  "main": "usdt-wallet-server.js",
+  "scripts": {
+    "start": "node usdt-wallet-server.js dev",
+    "start:prod": "node usdt-wallet-server.js prod",
+    "check": "node --check usdt-wallet-server.js && node --check router.js && node --check config/run_config.js",
+    "test": "echo \"no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinxer/wallet-service-mono.git"
+  },
+  "keywords": [
+    "USDT",
+    "Wallet"
+  ],
+  "author": "zinxer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zinxer/wallet-service-mono/issues"
+  },
+  "homepage": "https://github.com/zinxer/wallet-service-mono#readme",
+  "dependencies": {
+    "abi-decoder": "^2.2.2",
+    "aes-js": "^3.1.2",
+    "aws-sdk": "^2.553.0",
+    "bcrypt": "^3.0.6",
+    "bitcoin-core": "^2.2.0",
+    "bitcoinjs-lib": "^4.0.3",
+    "body-parser": "^1.19.0",
+    "busboy-body-parser": "^0.3.2",
+    "connect-busboy": "0.0.2",
+    "cors": "^2.8.5",
+    "create-hmac": "^1.1.7",
+    "cron": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-rate-limit": "^5.0.0",
+    "fast-csv": "^2.4.1",
+    "fs": "0.0.2",
+    "helmet": "^3.21.1",
+    "jsonwebtoken": "^8.5.1",
+    "juice": "^5.2.0",
+    "md5": "^2.2.1",
+    "md5-file": "^4.0.0",
+    "messaging-api-telegram": "^0.8.2",
+    "mysql2": "^1.7.0",
+    "nodemailer": "^6.3.1",
+    "otplib": "^11.0.1",
+    "qrcode": "^1.4.2",
+    "randomatic": "^3.1.1",
+    "readline": "^1.3.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "scrypt": "^6.0.3",
+    "sequelize": "^5.21.1",
+    "socket.io": "^2.3.0",
+    "uniqid": "^5.0.3",
+    "wallet-address-validator": "^0.2.4",
+    "web3": "^2.0.0-alpha"
+  },
+  "devDependencies": {}
+}
