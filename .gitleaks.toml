@@ -3,10 +3,14 @@ title = "gitleaks config"
 [extend]
 useDefault = true
 
-[allowlist]
+[[allowlists]]
 description = "Lockfiles only"
 paths = [
   '''package-lock\.json$''',
   '''yarn\.lock$''',
   '''pnpm-lock\.yaml$''',
 ]
+
+[[allowlists]]
+description = "Public mainnet USDT token contract address (verified false positive)"
+regexes = ['''0xdac17f958d2ee523a2206206994597c13d831ec7''']
