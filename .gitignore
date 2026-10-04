@@ -1,3 +1,17 @@
 node_modules
 config/.env
 package-lock.json
+
+# secret guard
+bin/test.js
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.keystore
+keystore/
+*.dump
+*.bak
+secrets/
